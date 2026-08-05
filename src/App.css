@@ -1,0 +1,24 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-scroll {
+  flex: 1;
+  padding: 8px 32px 40px;
+  overflow-x: auto;
+}
+
+.board-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  min-height: 60vh;
+}
+
+@media (max-width: 720px) {
+  .board-scroll {
+    padding: 8px 16px 32px;
+  }
+}

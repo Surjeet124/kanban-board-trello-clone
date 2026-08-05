@@ -1,0 +1,70 @@
+:root {
+  --bg: #14161b;
+  --surface: #1c1f26;
+  --surface-raised: #23262e;
+  --surface-hover: #282c35;
+  --border: #2e323c;
+  --border-soft: #262a32;
+  --text-primary: #edeef0;
+  --text-muted: #8a8f98;
+  --text-faint: #5b606b;
+
+  --accent-todo: #6c7a89;
+  --accent-progress: #e8a33d;
+  --accent-done: #3fa796;
+  --accent-danger: #e2574c;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 6px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-progress);
+  outline-offset: 2px;
+}

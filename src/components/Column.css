@@ -1,0 +1,167 @@
+.column {
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  width: 300px;
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 190px);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.column--over {
+  border-color: var(--col-accent, var(--accent-progress));
+  background: var(--surface-hover);
+}
+
+.column__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px 12px;
+  border-bottom: 2px solid var(--col-accent, var(--border));
+}
+
+.column__head-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.column__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--col-accent, var(--text-faint));
+  flex-shrink: 0;
+}
+
+.column__head h2 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.column__head-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.column__count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--surface-raised);
+  border-radius: 10px;
+  padding: 2px 8px;
+}
+
+.column__delete {
+  background: none;
+  border: none;
+  color: var(--text-faint);
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 2px;
+}
+
+.column__delete:hover {
+  color: var(--accent-danger);
+}
+
+.column__body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.column__empty {
+  font-size: 12.5px;
+  color: var(--text-faint);
+  text-align: center;
+  padding: 18px 4px;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  margin: 0;
+}
+
+.column__add-trigger {
+  margin: 6px 12px 14px;
+  background: none;
+  border: 1px dashed var(--border);
+  color: var(--text-muted);
+  border-radius: 6px;
+  padding: 9px;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.column__add-trigger:hover {
+  border-color: var(--text-faint);
+  color: var(--text-primary);
+}
+
+.column__form {
+  margin: 6px 12px 14px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.column__form textarea {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 13px;
+  resize: none;
+}
+
+.column__form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column__form select {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 4px;
+  padding: 5px 6px;
+  font-size: 12px;
+}
+
+.column__form-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.column__form-actions button {
+  font-size: 12.5px;
+  border-radius: 4px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.column__form-add {
+  background: var(--accent-progress) !important;
+  color: var(--bg) !important;
+  border: none !important;
+  font-weight: 600;
+}
