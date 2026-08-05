@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kanban-board-trello-clone/static/css/main.7154c818.css",
+    "main.js": "/kanban-board-trello-clone/static/js/main.0f547b30.js",
+    "index.html": "/kanban-board-trello-clone/index.html",
+    "main.7154c818.css.map": "/kanban-board-trello-clone/static/css/main.7154c818.css.map",
+    "main.0f547b30.js.map": "/kanban-board-trello-clone/static/js/main.0f547b30.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7154c818.css",
+    "static/js/main.0f547b30.js"
+  ]
+}
