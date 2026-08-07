@@ -23,14 +23,3 @@ Opens at `http://localhost:3000`.
   id stub, and delete.
 - `src/components/Header.jsx` — title bar, live task counter, "+ Lane" control.
 
-## Notes for interviews
-
-- Drag-and-drop uses the native HTML5 Drag and Drop API (`draggable`,
-  `onDragStart`, `onDragOver`, `onDrop`) instead of a library — good to mention
-  if asked "how does the DnD work" since it shows you understand the browser
-  API rather than just wiring up `react-beautiful-dnd`.
-- State lives in one place (`App.js`) and flows down via props — a natural
-  jumping-off point to talk about when you'd reach for Context or a state
-  library (Redux/Zustand) instead, if the interviewer pushes on scale.
-- Board state (columns + tasks) is persisted to `localStorage` on every change,
-  so a refresh doesn't lose your board.
